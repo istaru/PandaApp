@@ -111,4 +111,6 @@ dependencies {
     compile 'top.zibin:Luban:1.1.2'
     //友盟统计
     compile 'com.umeng.analytics:analytics:latest.integration'
+    //滑动退出activity
+    compile 'me.imid.swipebacklayout.lib:library:1.1.0'
 }

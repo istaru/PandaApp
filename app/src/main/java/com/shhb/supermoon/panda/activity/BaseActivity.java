@@ -21,13 +21,14 @@ import com.umeng.analytics.MobclickAgent;
 import com.umeng.message.PushAgent;
 
 import me.drakeet.materialdialog.MaterialDialog;
+import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
 
 
 /**
  * Created by superMoon on 2017/7/31.
  */
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends SwipeBackActivity {
 
     public static Activity context;
     /**
