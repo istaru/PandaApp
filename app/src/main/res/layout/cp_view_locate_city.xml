@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    tools:ignore="RtlHardcoded">
+
+    <TextView
+        style="@style/LetterIndexTextViewStyle"
+        android:text="@string/cp_located_city"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="left|center">
+
+        <LinearLayout
+            android:id="@+id/layout_locate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/tv_located_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cp_locating"
+                android:textSize="@dimen/city_text_size"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

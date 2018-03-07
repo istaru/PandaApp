@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_activity" />
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/swipeToLoadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:default_to_loading_more_scrolling_duration="500"
+        app:load_more_complete_delay_duration="0"
+        app:load_more_final_drag_offset="@dimen/load_more_final_offset_google"
+        app:load_more_trigger_offset="@dimen/load_more_trigger_offset_google"
+        app:refresh_final_drag_offset="@dimen/refresh_final_offset_google"
+        app:refresh_trigger_offset="@dimen/refresh_trigger_offset_google"
+        app:swipe_style="above">
+
+        <include
+            android:id="@+id/swipe_refresh_header"
+            layout="@layout/layout_google_hook_header" />
+
+        <RelativeLayout
+            android:id="@id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/yyz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/shtg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="恭喜，您的身份证已通过审核"
+                    android:textColor="@color/btn_green_us"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="(证件图片已做隐私处理，不显示具体内容)"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wyz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawablePadding="6dp"
+                    android:padding="20dp"
+                    android:text="第一步：请拍摄身份证正面照\n    (身份证完整，有效期清晰)"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/idimg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/sc01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawablePadding="6dp"
+                    android:padding="20dp"
+                    android:text="第二步：请拍摄身份证反面照\n    (身份证完整，有效期清晰)"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/idimg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/sc02" />
+
+                <Button
+                    android:id="@+id/upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/btn_web_bg"
+                    android:enabled="false"
+                    android:text="提交"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/swipe_load_more_footer"
+            layout="@layout/layout_google_hook_footer" />
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+</LinearLayout>

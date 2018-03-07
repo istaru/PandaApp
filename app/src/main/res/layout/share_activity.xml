@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_activity" />
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/swipeToLoadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:default_to_loading_more_scrolling_duration="500"
+        app:load_more_complete_delay_duration="0"
+        app:load_more_final_drag_offset="@dimen/load_more_final_offset_google"
+        app:load_more_trigger_offset="@dimen/load_more_trigger_offset_google"
+        app:refresh_final_drag_offset="@dimen/refresh_final_offset_google"
+        app:refresh_trigger_offset="@dimen/refresh_trigger_offset_google"
+        app:swipe_style="above">
+
+        <include
+            android:id="@+id/swipe_refresh_header"
+            layout="@layout/layout_google_hook_header" />
+
+        <ScrollView
+            android:id="@id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/on_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableBottom="@mipmap/ico_down"
+                        android:gravity="center"
+                        android:text="邀请记录"
+                        android:textColor="@color/app_color"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/yqbg" />
+
+                    <ImageView
+                        android:id="@+id/QRCode"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/error_z" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:text="邀请链接"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp">
+
+                    <TextView
+                        android:id="@+id/link"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/copyL"
+                        android:background="@drawable/edit_text_bg"
+                        android:focusable="false"
+                        android:gravity="center|left"
+                        android:hint="邀请链接……"
+                        android:inputType="text"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" />
+
+                    <Button
+                        android:id="@+id/copyL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_green"
+                        android:text="复制链接"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="13dp"
+                    android:text="** 您每推荐一个好友注册，好友可以获得5云红包。红包开启条件：15天内通过返利网下任意订单每推荐一个好友注册，好友可以获得5元红包。"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/uInvite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/btn_web_bg"
+                    android:enabled="false"
+                    android:text="邀请好友"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/swipe_load_more_footer"
+            layout="@layout/layout_google_hook_footer" />
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+</LinearLayout>

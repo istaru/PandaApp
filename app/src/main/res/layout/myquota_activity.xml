@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_activity" />
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/swipeToLoadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:default_to_loading_more_scrolling_duration="500"
+        app:load_more_complete_delay_duration="0"
+        app:load_more_final_drag_offset="@dimen/load_more_final_offset_google"
+        app:load_more_trigger_offset="@dimen/load_more_trigger_offset_google"
+        app:refresh_final_drag_offset="@dimen/refresh_final_offset_google"
+        app:refresh_trigger_offset="@dimen/refresh_trigger_offset_google"
+        app:swipe_style="above">
+
+        <include
+            android:id="@+id/swipe_refresh_header"
+            layout="@layout/layout_google_hook_header" />
+
+        <LinearLayout
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/webBg"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@mipmap/jbxx1"
+                android:drawablePadding="6dp"
+                android:padding="10dp"
+                android:text="认证基本信息即可预估额度"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="贷款额度(元)"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/my_quota"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textColor="@color/money"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="10dp"
+                    android:text="请完整填写基本信息"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(必填)"
+                    android:textColor="@color/btn_yellow_s"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/quota1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_btn_bg"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:drawableLeft="@mipmap/xq8"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="基本信息认证"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rz_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/rz_img1"
+                        android:background="@drawable/btn_shgray_bg"
+                        android:gravity="center"
+                        android:text="去认证"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/rz_img1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/my4" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/webBg" />
+
+                <RelativeLayout
+                    android:id="@+id/quota2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_btn_bg"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:drawableLeft="@mipmap/xq9"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="个人身份证"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rz_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/rz_img2"
+                        android:background="@drawable/btn_shgray_bg"
+                        android:gravity="center"
+                        android:text="去认证"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/rz_img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/my4" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/webBg" />
+
+                <RelativeLayout
+                    android:id="@+id/quota3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_btn_bg"
+                    android:padding="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:drawableLeft="@mipmap/xq6"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="运营商"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rz_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/rz_img3"
+                        android:background="@drawable/btn_shgray_bg"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:text="去认证"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/rz_img3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/my4" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/webBg"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/quota4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_btn_bg"
+                    android:padding="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:drawableLeft="@mipmap/xq7"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="芝麻信用"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rz_text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/rz_img4"
+                        android:background="@drawable/btn_shgray_bg"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:text="去认证"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/rz_img4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/my4" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/webBg" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/swipe_load_more_footer"
+            layout="@layout/layout_google_hook_footer" />
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+</LinearLayout>

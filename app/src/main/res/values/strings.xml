@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">熊猫贷</string>
+    <string name="forget_text"><u>忘记密码？</u></string>
+    <string name="btn_registered_text"><u>还没有账号，去注册！</u></string>
+    <string name="btn_login_text"><u>已有账号，去登录</u></string>
+    <string name="btn_xy_text"><u>同意《熊猫贷的注册协议》</u></string>
+
+    <string name="cp_select_city">选择城市</string>
+    <string name="cp_hot_city">热门城市</string>
+    <string name="cp_located_city">定位城市</string>
+    <string name="cp_hint_search_box">请输入城市名或拼音</string>
+    <string name="cp_nothing_found">没有搜索结果~</string>
+    <string name="cp_locating">正在定位…</string>
+    <string name="cp_located_failed">定位失败</string>
+
+    <string name="msg_jz">拼命加载中</string>
+    <string name="msg_net">网络异常！</string>
+    <string name="msg_send">网络错误！</string>
+
+    <string name="msg_input_phone">请输入手机号码</string>
+    <string name="msg_phone_error">手机号码不正确！</string>
+    <string name="msg_imgcode_error">图形验证码不正确！</string>
+    <string name="msg_input_code">请输入验证码</string>
+    <string name="msg_input_pw">请输入您的密码</string>
+    <string name="msg_pw_error">密码不能少于6位！</string>
+    <string name="msg_please_register">请先同意注册协议！</string>
+
+    <string name="msg_input_money">请输入借款金额</string>
+    <string name="msg_input_time">请输入借款时间</string>
+</resources>

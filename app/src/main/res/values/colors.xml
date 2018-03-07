@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="app_color">#767de5</color>
+    <color name="app_color_t">#63767de5</color>
+    <color name="gray">#4D4D4D</color>
+    <color name="webBg">#F1F1F1</color>
+    <color name="webBg_white">#f7f7f7</color>
+    <color name="text_color">#999999</color>
+    <color name="bTransparent">#10000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="freshen_color">#768795</color>
+    <color name="btn_green_s">#6dd13b</color>
+    <color name="btn_green_us">#62c531</color>
+    <color name="btn_blue_us">#766ce6</color>
+    <color name="btn_red_s">#f54230</color>
+    <color name="btn_red_b">#1ef53711</color>
+    <color name="btn_red_us">#aae74c3c</color>
+    <color name="btn_yellow_s">#f5931c</color>
+    <color name="money">#ff644a</color>
+    <color name="wbv_color">#f0eff5</color>
+
+    <!--<color name="google_blue">#4285F4</color>
+    <color name="google_red">#EA4335</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>-->
+
+    <color name="google_blue">#767de5</color>
+    <color name="google_red">#767de5</color>
+    <color name="google_green">#767de5</color>
+    <color name="google_yellow">#767de5</color>
+
+    <color name="cp_gray">#8c8c8c</color>
+    <color name="cp_gray_deep">#5c5c5c</color>
+</resources>

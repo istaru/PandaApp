@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/webBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_activity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:drawableLeft="@mipmap/jbxx1"
+        android:drawablePadding="6dp"
+        android:padding="10dp"
+        android:text="熊猫贷可以通过你的芝麻信用评估借款额度"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="left|center"
+            android:padding="15dp"
+            android:text="姓名"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/c_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="left|center"
+            android:hint="请输入您的姓名"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:text=""/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="59dp"
+        android:background="@color/webBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="left|center"
+            android:padding="15dp"
+            android:text="身份证"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/c_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="left|center"
+            android:hint="请输入您身份证号码"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/xy_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/is_tm"
+            style="@style/CustomCheckboxTheme" />
+
+        <TextView
+            android:id="@+id/xy_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我已阅读并同意"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/credit_tk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《服务条款》"
+            android:textColor="@color/google_blue"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:background="@drawable/recycler_btn_bg"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_blue_bg"
+        android:text="开始验证"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

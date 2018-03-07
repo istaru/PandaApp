@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/up_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/webBg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="今日排行"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/isSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/zc1"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--ActionBar的颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--状态栏的颜色 （使用support包时似乎无效。）-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- 随主题而改变的颜色（如CheckBox的颜色）-->
+        <item name="colorAccent">@color/app_color</item>
+    </style>
+
+    //1、设置背景图Theme
+    <style name="mainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@mipmap/welcome</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="TabLayoutTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">@dimen/text_16_sp</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:checked">true</item>
+    </style>
+
+    <style name="SwitchCompat.Control" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/app_color</item>
+        <item name="colorSwitchThumbNormal">@color/text_color</item>
+        <item name="android:colorForeground">@color/text_color</item>
+    </style>
+
+    <style name="SwitchCompat.Text" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">9dp</item>
+    </style>
+
+    <style name="LetterIndexTextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">@dimen/side_letter_bar_width</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/cp_gray</item>
+        <item name="android:background">@color/webBg</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/cp_gray</item>
+    </style>
+
+</resources>

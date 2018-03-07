@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/webBg"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/title_activity" />
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/swipeToLoadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:default_to_loading_more_scrolling_duration="500"
+        app:load_more_complete_delay_duration="0"
+        app:load_more_final_drag_offset="@dimen/load_more_final_offset_google"
+        app:load_more_trigger_offset="@dimen/load_more_trigger_offset_google"
+        app:refresh_final_drag_offset="@dimen/refresh_final_offset_google"
+        app:refresh_trigger_offset="@dimen/refresh_trigger_offset_google"
+        app:swipe_style="above">
+
+        <include
+            android:id="@+id/swipe_refresh_header"
+            layout="@layout/layout_google_hook_header" />
+
+
+        <ScrollView
+            android:id="@id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/dixian"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:inputType="text"
+                            android:text="•••••••••••••••••"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/dixian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/wLogin"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:text="一分钟急速申请"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dixian"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:inputType="text"
+                            android:text="•••••••••••••••••"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/f3_text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="借款金额"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/money"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_toLeftOf="@+id/f3_text2"
+                                android:layout_toRightOf="@+id/f3_text1"
+                                android:background="@color/white"
+                                android:gravity="right|center"
+                                android:hint="@string/msg_input_money"
+                                android:inputType="number"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/text_color"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/f3_text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="元"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/webBg" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/f3_text3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="借款时间"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_toLeftOf="@+id/f3_text4"
+                                android:layout_toRightOf="@+id/f3_text3"
+                                android:background="@color/white"
+                                android:gravity="right|center"
+                                android:hint="@string/msg_input_time"
+                                android:inputType="number"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/text_color"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/f3_text4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="天"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/webBg" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/fr3_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/btn_blue_bg"
+                        android:text="立即申请"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/oval_btn_bg"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableTop="@mipmap/yxd92x"
+                                android:gravity="center"
+                                android:text="利息低"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/oval_btn_bg"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableTop="@mipmap/yxd102x"
+                                android:gravity="center"
+                                android:text="额度大"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/oval_btn_bg"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableTop="@mipmap/yxd112x"
+                                android:gravity="center"
+                                android:text="放款快"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableTop="@mipmap/yxd122x"
+                    android:gravity="center"
+                    android:text="熊猫贷优势"
+                    android:textColor="@color/btn_yellow_s"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ft32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@mipmap/yxd5"
+                        android:gravity="center"
+                        android:text="月入2000即可申请，利率地至0.8%，当天放贷"
+                        android:textColor="@color/btn_yellow_s"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/ft33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ft32"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@mipmap/yxd6"
+                        android:gravity="center"
+                        android:text="百种贷款方案供您选择，优质服务全程指导"
+                        android:textColor="@color/btn_yellow_s"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/ft34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ft33"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@mipmap/yxd7"
+                        android:gravity="center"
+                        android:text="贷款方案精准推荐，智能匹配一键直达"
+                        android:textColor="@color/btn_yellow_s"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ft34"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@mipmap/yxd8"
+                        android:gravity="center"
+                        android:text="近千家金融合作机构，国有、股份、外资银行"
+                        android:textColor="@color/btn_yellow_s"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <include
+            android:id="@+id/swipe_load_more_footer"
+            layout="@layout/layout_google_hook_footer" />
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+</LinearLayout>
