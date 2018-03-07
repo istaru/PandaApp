@@ -13,9 +13,14 @@
     </style>
 
     //1、设置背景图Theme
-    <style name="mainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="welecomeTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@mipmap/welcome</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
         <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="mainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
     </style>
 
     <style name="TabLayoutTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
