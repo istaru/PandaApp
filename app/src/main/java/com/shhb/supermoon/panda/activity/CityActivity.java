@@ -263,9 +263,4 @@ public class CityActivity extends BaseActivity implements View.OnClickListener{
             mLocationClient.stopLocation();
         }
     }
-
-    @Override
-    protected void setStatusBar() {
-        StatusBarUtil.setTranslucentForImageView(this, 0, mViewNeedOffset);
-    }
 }

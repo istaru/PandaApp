@@ -58,6 +58,31 @@
             android:value="16652aa07521d1441e06bc9af05bb879" />
         <!-- 友盟配置（结束） -->
 
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="PandaLoad"
+                    android:pathPrefix="/openwith"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/mainTheme"
+            android:screenOrientation="portrait" />
+
         <!--友盟分享(开始)-->
         <!-- 微信(开始) -->
         <activity
@@ -101,27 +126,6 @@
         <!--友盟分享(结束)-->
 
         <activity
-            android:name=".activity.WelcomeActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/mainTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:host="PandaLoad"
-                    android:pathPrefix="/openwith"
-                    android:scheme="app" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".activity.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
@@ -132,9 +136,6 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".activity.RegisterActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.MainActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.CityActivity"

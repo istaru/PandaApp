@@ -184,10 +184,4 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         UMShareAPI.get(this).onActivityResult(requestCode, resultCode, data);//友盟精简版的回调
     }
-
-    @Override
-    protected void setStatusBar() {
-        StatusBarUtil.setTranslucentForImageView(this, 0, mViewNeedOffset);
-    }
-
 }

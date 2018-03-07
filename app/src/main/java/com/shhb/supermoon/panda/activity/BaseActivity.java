@@ -97,7 +97,7 @@ public class BaseActivity extends SwipeBackActivity {
      * 设置透明状态栏
      */
     protected void setStatusBar() {
-        StatusBarUtil.setColor(this, ContextCompat.getColor(context, R.color.white), 0);
+        StatusBarUtil.setTranslucentForImageView(this, 0, mViewNeedOffset);
     }
 
     /**

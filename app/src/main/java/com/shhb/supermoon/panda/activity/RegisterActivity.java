@@ -483,8 +483,4 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         }, parameter);
     }
 
-    @Override
-    protected void setStatusBar() {
-        StatusBarUtil.setTranslucentForImageView(this, 0, mViewNeedOffset);
-    }
 }

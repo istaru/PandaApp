@@ -49,9 +49,4 @@ public class OperateActivity extends BaseActivity implements View.OnClickListene
                 break;
         }
     }
-
-    @Override
-    protected void setStatusBar() {
-        StatusBarUtil.setTranslucentForImageView(this, 0, mViewNeedOffset);
-    }
 }

@@ -147,11 +147,6 @@ public class MainActivity extends BaseActivity{
     }
 
     @Override
-    protected void setStatusBar() {
-        StatusBarUtil.setTranslucentForImageView(this, 0, mViewNeedOffset);
-    }
-
-    @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             exit();

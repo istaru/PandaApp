@@ -130,11 +130,6 @@ public class SetActivity extends BaseActivity implements View.OnClickListener,Co
     }
 
     @Override
-    protected void setStatusBar() {
-        StatusBarUtil.setTranslucentForImageView(this, 0, mViewNeedOffset);
-    }
-
-    @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
         showToast(0,context.getResources().getString(R.string.msg_jz));
         if(checked){

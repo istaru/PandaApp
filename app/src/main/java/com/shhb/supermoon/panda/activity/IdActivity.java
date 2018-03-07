@@ -227,12 +227,6 @@ public class IdActivity extends BaseActivity implements View.OnClickListener, On
         }
     }
 
-
-    @Override
-    protected void setStatusBar() {
-        StatusBarUtil.setTranslucentForImageView(this, 0, mViewNeedOffset);
-    }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

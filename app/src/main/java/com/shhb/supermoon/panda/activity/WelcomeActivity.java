@@ -533,9 +533,4 @@ public class WelcomeActivity extends BaseActivity {
         context.finish();
     }
 
-    @Override
-    protected void setStatusBar() {
-        StatusBarUtil.setTranslucentForImageView(this, 0, mViewNeedOffset);
-    }
-
 }

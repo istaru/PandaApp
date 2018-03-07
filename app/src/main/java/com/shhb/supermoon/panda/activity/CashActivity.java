@@ -201,10 +201,4 @@ public class CashActivity extends BaseActivity implements View.OnClickListener, 
                 break;
         }
     }
-
-    @Override
-    protected void setStatusBar() {
-        StatusBarUtil.setTranslucentForImageView(this, 0, mViewNeedOffset);
-    }
-
 }

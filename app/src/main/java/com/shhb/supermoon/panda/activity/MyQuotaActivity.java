@@ -185,9 +185,4 @@ public class MyQuotaActivity extends BaseActivity implements View.OnClickListene
                 break;
         }
     }
-
-    @Override
-    protected void setStatusBar() {
-        StatusBarUtil.setTranslucentForImageView(this, 0, swipeToLoadLayout);
-    }
 }

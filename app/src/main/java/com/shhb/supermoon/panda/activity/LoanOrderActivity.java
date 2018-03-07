@@ -205,10 +205,4 @@ public class LoanOrderActivity extends BaseActivity implements View.OnClickListe
                 break;
         }
     }
-
-    @Override
-    protected void setStatusBar() {
-        StatusBarUtil.setTranslucentForImageView(this, 0, mViewNeedOffset);
-    }
-
 }

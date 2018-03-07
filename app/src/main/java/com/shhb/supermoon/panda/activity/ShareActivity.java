@@ -182,11 +182,6 @@ public class ShareActivity extends BaseActivity implements View.OnClickListener 
         }
     }
 
-    @Override
-    protected void setStatusBar() {
-        StatusBarUtil.setTranslucentForImageView(this, 0, mViewNeedOffset);
-    }
-
     /**
      * 友盟分享的回调
      * @param requestCode

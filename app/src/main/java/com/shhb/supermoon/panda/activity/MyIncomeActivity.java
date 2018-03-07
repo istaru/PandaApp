@@ -196,9 +196,4 @@ public class MyIncomeActivity extends BaseActivity implements View.OnClickListen
                 break;
         }
     }
-
-    @Override
-    protected void setStatusBar() {
-        StatusBarUtil.setTranslucentForImageView(this, 0, mViewNeedOffset);
-    }
 }
